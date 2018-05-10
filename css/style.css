@@ -4,6 +4,38 @@
 }
 
 h1 {
-    color: burlywood;
+    color: (0,0,0);
     text-align: center;
+}
+
+
+
+h2 {
+    margin-left: 40px;
+    text-decoration-line: underline
+
+}
+
+ol {
+    margin-left: 40px
+}
+
+section {
+    margin-left: 40px;
+    text-size: 15px; 
+    text-decoration-line: underline;
+    font-weight: bold;
+}
+
+p {
+    margin-left: 40px;
+    text-indent: 40px;
+}
+
+ol {
+    margin-left: 40px;
+}
+
+ul {
+    margin-left: 40px;
 }
