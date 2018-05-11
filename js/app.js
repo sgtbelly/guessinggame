@@ -86,10 +86,11 @@ while (question6 !== favNumber && tries <= maxTries) {
 
 alert(user + ' you have ' + userPoints + ' points');
 // //
-// var question7 = prompt(user + ' Where have I lived besides Washington? ').toLowerCase;
-// console.log(question7);
-// if (question7 === 'nc' || question7 === 'north carolina'); {
-//   alert('Yeah im from North Carolina');}
-// userPoints++;
+var question7 = prompt(user + ' Where have I lived besides Washington? ').toLowerCase;
+console.log(question7);
+var placesLived = placesLived['Washington','North Carolina', 'Nebraska', 'Missouri'];
+while (question7 === 'nc' || question7 === 'north carolina'); {
+  ('Yeah im from North Carolina');}
+userPoints++;
 
 alert(user + ' you have ' + userPoints + ' points');
