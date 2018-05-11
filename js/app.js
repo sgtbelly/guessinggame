@@ -68,6 +68,12 @@ alert(user + ' you have ' + userPoints + ' points');
 var question6 = prompt(user + ' what is my favorite number from 1 to 10? ');
 console.log(question6);
 if (question6 === 3) { alert( 'Just right');}
+userPoints++;
+alert(user + ' you have ' + userPoints + ' points');
 
-var question7 = prompt(user + ' Where have I lived besides Washington? ');
+var question7 = prompt(user + ' Where have I lived besides Washington? ').toLowerCase;
 console.log(question7);
+if (question7 === 'nc' || question7 === 'north carolina'); {
+  alert('Yeah im from North Carolina');}
+userPoints++;
+alert(user + ' you have ' + userPoints + ' points');
