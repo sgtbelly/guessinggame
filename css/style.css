@@ -22,7 +22,7 @@ ol {
 
 section {
     margin-left: 40px;
-    text-size: 15px; 
+    text-size-adjust: 15pt; 
     text-decoration-line: underline;
     font-weight: bold;
 }
