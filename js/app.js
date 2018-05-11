@@ -65,4 +65,7 @@ if (question5 === 'yes' || question5 === 'y') {
 userPoints++;
 alert(user + ' you have ' + userPoints + ' points');
 
-
+var question6 = prompt(user + ' what is my favorite number? ');
+console.log(question6);
+if (question6 < 2){alert ('TOO LOW; TOO SLOW')}; if (question6 > 4){alert ('TOO HIGH MAN Bring it back on down')};
+esle { alert( 'Just right')}
