@@ -65,7 +65,9 @@ if (question5 === 'yes' || question5 === 'y') {
 userPoints++;
 alert(user + ' you have ' + userPoints + ' points');
 
-var question6 = prompt(user + ' what is my favorite number? ');
+var question6 = prompt(user + ' what is my favorite number from 1 to 10? ');
 console.log(question6);
-if (question6 < 2){alert ('TOO LOW; TOO SLOW')}; if (question6 > 4){alert ('TOO HIGH MAN Bring it back on down')};
-esle { alert( 'Just right')}
+if (question6 === 3) { alert( 'Just right');}
+
+var question7 = prompt(user + ' Where have I lived besides Washington? ');
+console.log(question7);
