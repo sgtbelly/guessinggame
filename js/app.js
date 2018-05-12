@@ -97,19 +97,43 @@ alert(user + ' you have ' + userPoints + ' points');
 //   console.log(question7);guesses++;
 //   if (question7 === placesLived)alert(placesLived);
 //   if (guesses < maxGuesses);}userPoints++;
+// question 7
+// var placesBeen = ['South Korea','Iraq', 'Louisanna', 'Afghanistan', 'Japan']
+//userPoints++;
+var countriesBeen = ['south korea', 'iraq', 'louisanna', 'afghanistan', 'japan'];
+var guesses = 0;
+var question7;
+var correctAnswer;
+while(guesses < 7){
+  question7 = prompt('Can you guess what countries I have been to?').toLowerCase();
+  for(var i = 0; i < countriesBeen.length; i++) {
+    if(question7 === countriesBeen[i]){// only checks if answer is correct only
+      correctAnswer = true;
+    }
+  }
+  if(!correctAnswer){// if user guesses wrong
+    alert('sorry try again');
+    guesses++;
+  }
+  else if(guesses === 6){// if user runs out of guesses
+    alert('You have ran out of guesses; GAME OVER');
+    break;
+  }
+  else{// if user gets answer corect
+    alert ('You are correct!!!');
+    userPoints++;
+    guesses += 7;
+  }
+}
 
-// userPoints++;
-// var cityIlived = ['lynnwood', 'shoreline', 'burien', 'federal way', 'tacoma'];
-// var answer7 = prompt('Can you guess what city I\'ve lived, in Washington State?' + 'Please enter a name of a city within Washington State!').toLowerCase();
-// var tries2 = 0;
-// for (i = 0; i < cityIlived.length; i++){
-//   if(answer7 === cityIlived[i]){
-//     alert ('Yayyyy you got it right');
-//   } else if(answer7 !== cityIlived[i] && tries2 < 5){
-//     alert('You have guessed wrong, Please try again!! ');
-//     var answer7 = prompt('Can you guess what city I\'ve lived, in Washington State?'+ 'Please enter a name of a city within Washington State!').toLowerCase();
-// tries2++;
-// };
+
+// for (var i = 0; i < countriesBeen.length; i++){
+//   if(question7 === countriesBeen[i]){
+//     alert ('Great Job');
+//   } else if(question7 !== countriesBeen[i] && guesses <= 6){
+//     alert('I\'ve never been there, but I would like to go ');
+//     prompt('Guess what countires I have been to?').toLowerCase();
+//     guesses++;
+//   }
 // }
 
-alert(user + ' you have ' + userPoints + ' points');
