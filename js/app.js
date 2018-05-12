@@ -127,7 +127,8 @@ quest6();
 //end editing question 6
 
 //question 7
-
+var question7;
+function quest7(){
   var countriesBeen = ['south korea', 'iraq', 'louisanna', 'afghanistan', 'japan'];
   var guesses = 0;
   var question7;
@@ -153,6 +154,9 @@ quest6();
       guesses += 7;
     }
   };
+};
+quest7();
+//end of editing question 7
 
 
 
