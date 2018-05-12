@@ -100,53 +100,60 @@ quest5();
 //end editing question 5
 
 //question 6
+var question6;
+function quest6(){
+  var userNumber = 10;// between 1-10
+  var favNumber = '3'; //correct number
+  var tries = 1; // # of tries
+  var maxTries = 4; // # of max tries
+  
 
-var userNumber = 10;// between 1-10
-var favNumber = '3'; //correct number
-var tries = 1; // # of tries
-var maxTries = 4; // # of max tries
+  // var tries = 1;
+  // while guess < 3
+  // alert "too low"
+  // while guess > 3
+  // alert "too high"
+  // while guess === 3
+  // alert "correct"
+  while (question6 !== favNumber && tries <= maxTries) {
+    var question6 = prompt(user + ' what is my favorite number from 1 to ' + userNumber);tries++;console.log(question6);
+    if (question6 === favNumber)alert('Correct');
+    if (question6 < favNumber)alert('Too Low');
+    if (question6 > favNumber)alert('Too High');
+    if (tries < maxTries);}userPoints++;
+  alert(user + ' you have ' + userPoints + ' points');
+};
+quest6();
+//end editing question 6
 
+//question 7
 
-// var tries = 1;
-// while guess < 3
-// alert "too low"
-// while guess > 3
-// alert "too high"
-// while guess === 3
-// alert "correct"
-while (question6 !== favNumber && tries <= maxTries) {
-  var question6 = prompt(user + ' what is my favorite number from 1 to ' + userNumber);tries++;console.log(question6);
-  if (question6 === favNumber)alert('Correct');
-  if (question6 < favNumber)alert('Too Low');
-  if (question6 > favNumber)alert('Too High');
-  if (tries < maxTries);}userPoints++;
-
-alert(user + ' you have ' + userPoints + ' points');
-var countriesBeen = ['south korea', 'iraq', 'louisanna', 'afghanistan', 'japan'];
-var guesses = 0;
-var question7;
-var correctAnswer;
-while(guesses < 7){
-  question7 = prompt('Can you guess what countries I have been to?').toLowerCase();
-  for(var i = 0; i < countriesBeen.length; i++) {
-    if(question7 === countriesBeen[i]){// only checks if answer is correct only
-      correctAnswer = true;
+  var countriesBeen = ['south korea', 'iraq', 'louisanna', 'afghanistan', 'japan'];
+  var guesses = 0;
+  var question7;
+  var correctAnswer;
+  while(guesses < 7){
+    question7 = prompt('Can you guess what countries I have been to?').toLowerCase();
+    for(var i = 0; i < countriesBeen.length; i++) {
+      if(question7 === countriesBeen[i]){// only checks if answer is correct only
+        correctAnswer = true;
+      }
     }
-  }
-  if(!correctAnswer){// if user guesses wrong
-    alert('sorry try again');
-    guesses++;
-  }
-  else if(guesses === 6){// if user runs out of guesses
-    alert('You have ran out of guesses; GAME OVER');
-    break;
-  }
-  else{// if user gets answer corect
-    alert ('You are correct!!!');
-    userPoints++;
-    guesses += 7;
-  }
-}
+    if(!correctAnswer){// if user guesses wrong
+      alert('sorry try again');
+      guesses++;
+    }
+    else if(guesses === 6){// if user runs out of guesses
+      alert('You have ran out of guesses; GAME OVER');
+      break;
+    }
+    else{// if user gets answer corect
+      alert ('You are correct!!!');
+      userPoints++;
+      guesses += 7;
+    }
+  };
+
 
 
 // for (var i = 0; i < countriesBeen.length; i++){
