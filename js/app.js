@@ -88,14 +88,15 @@ alert(user + ' you have ' + userPoints + ' points');
 // //
 var guesses = 0;
 var maxGuesses = 6;
-
-var placesLived = placesLived ['North Carolina' , 'Nebraska' , 'Missouri' ]
-while (question7 !== placesLived && guesses <= maxGuesses); {
-  var question7 = prompt(user + ' Where have I lived besides Washington? ').toLowerCase;
-  console.log(question7);;guesses++;
+var question7 = prompt(user + ' Where have I lived besides Washington? ').toLowerCase;
+console.log(question7);guesses++;
+var placesLived = placesLived ['North Carolina' , 'Nebraska' , 'Missouri' ];
+console.log(placesLived.past);
+while (question7 === placesLived && guesses <= maxGuesses); {
+  prompt(user + ' Where have I lived besides Washington? ').toLowerCase;
+  console.log(question7);guesses++;
   if (question7 === placesLived)alert(placesLived);
-  if (guesses < maxGuesses);}userPoints++
-  else { alert('Please try again');};
+  if (guesses < maxGuesses);}userPoints++;
 
 userPoints++;
 
