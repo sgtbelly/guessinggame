@@ -69,16 +69,21 @@ quest3();
 // end editing question 3
 
 //question 4
+var question4;
+function quest4(){
+  question4 = prompt(user + ' Did the Seattle culture keep us here?', 'type yes or no' ).toLowerCase();
+  console.log(question4);
+  if (question4 === 'yes' || question4 === 'y') {
+    alert ('CORRECTAMUNDO!!!! My wife is Korean and we saw how everyone here is so welcoming, accepting, and they are vast that we fell in love with this place.');
+  } else {
+    alert(' How can you not love the culture out here.');}
+  userPoints++;
+  alert(user + ' you have ' + userPoints + ' points');
+};
+quest4();
+// end editing question 4
 
-var question4 = prompt(user + ' Did the Seattle culture keep us here?', 'type yes or no' ).toLowerCase();
-console.log(question4);
-if (question4 === 'yes' || question4 === 'y') {
-  alert ('CORRECTAMUNDO!!!! My wife is Korean and we saw how everyone here is so welcoming, accepting, and they are vast that we fell in love with this place.');
-} else {
-  alert(' How can you not love the culture out here.');}
-userPoints++;
-alert(user + ' you have ' + userPoints + ' points');
-
+//question 5
 var question5 = prompt(user + ' Did the beauty of the Pacfic Northwest make us want to come back?', 'type yes or no' ).toLowerCase();
 console.log(question5);
 if (question5 === 'yes' || question5 === 'y') {
