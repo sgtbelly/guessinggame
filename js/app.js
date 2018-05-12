@@ -34,7 +34,7 @@ function quest1(){
     alert (' You are correct im originally for North Carolina; I was stationed here in 2007, we liked it so when I got out of the Army we came back.');
     userPoints++;}else { alert (' Please try again');}
   alert(user + ' you have ' + userPoints + ' points');
-}
+};
 quest1();
 // end editing question 1
 
@@ -46,23 +46,29 @@ function quest2(){
   if (question2 === 'yes' || question2 === 'y') {
     alert (' You are correct I have a beautiful Wife and I\'m wrapped around the finger of my wonderful 10 year old daughter.');
     userPoints++;
-  }else {
+  } else {
   alert ('Try again');}
   alert(user + ' you have ' + userPoints + ' points');
-}
+};
 quest2();
 // end editing question 2
 
 //question 3
+var question3;
+function quest3(){
+  question3 = prompt(user + ' Do I like the Seahawks?', ' type yes or no' ).toLowerCase();
+  console.log(question3);
+  if (question3 === 'no' || question3 === 'n'){
+    alert ('Although I do like the Mariners!, I am a huge DC Sports fan at heart, I like the Redskins, Capitals, Nats, and Wizards');
+    userPoints++;}
+  else {
+    alert( 'Im sorry try again');}
+  alert(user + ' you have ' + userPoints + ' points');
+};
+quest3();
+// end editing question 3
 
-var question3 = prompt(user + ' Do I like the Seahawks?', ' type yes or no' ).toLowerCase();
-console.log(question3);
-if (question3 === 'no' || question3 === 'n'){
-  alert ('Although I do like the Mariners!, I am a huge DC Sports fan at heart, I like the Redskins, Capitals, Nats, and Wizards');
-  userPoints++;}
-else {
-  alert( 'Im sorry try again');}
-alert(user + ' you have ' + userPoints + ' points');
+//question 4
 
 var question4 = prompt(user + ' Did the Seattle culture keep us here?', 'type yes or no' ).toLowerCase();
 console.log(question4);
