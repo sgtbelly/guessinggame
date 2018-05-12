@@ -84,15 +84,23 @@ quest4();
 // end editing question 4
 
 //question 5
-var question5 = prompt(user + ' Did the beauty of the Pacfic Northwest make us want to come back?', 'type yes or no' ).toLowerCase();
-console.log(question5);
-if (question5 === 'yes' || question5 === 'y') {
-  alert (' Hell Yeah, I love nature my family and I love to go on short hikes around washington! ');
-} else {
-  alert( ' It is so beautiful I will never leave this place');
-}
-userPoints++;
-alert(user + ' you have ' + userPoints + ' points');
+var question5;
+function quest5(){
+  question5 = prompt(user + ' Did the beauty of the Pacfic Northwest make us want to come back?', 'type yes or no' ).toLowerCase();
+  console.log(question5);
+  if (question5 === 'yes' || question5 === 'y') {
+    alert (' Hell Yeah, I love nature my family and I love to go on short hikes around washington! ');
+    userPoints++;
+  } else {
+    alert( ' It is so beautiful I will never leave this place');
+  }
+  alert(user + ' you have ' + userPoints + ' points');
+};
+quest5();
+//end editing question 5
+
+//question 6
+
 var userNumber = 10;// between 1-10
 var favNumber = '3'; //correct number
 var tries = 1; // # of tries
