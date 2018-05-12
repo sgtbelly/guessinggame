@@ -86,18 +86,30 @@ var user = prompt(' What is your name?');
 
 alert(user + ' you have ' + userPoints + ' points');
 // //
-var guesses = 0;
-var maxGuesses = 6;
-var question7 = prompt(user + ' Where have I lived besides Washington? ').toLowerCase;
-console.log(question7);guesses++;
-var placesLived = placesLived ['North Carolina' , 'Nebraska' , 'Missouri' ];
-console.log(placesLived.past);
-while (question7 === placesLived && guesses <= maxGuesses); {
-  prompt(user + ' Where have I lived besides Washington? ').toLowerCase;
-  console.log(question7);guesses++;
-  if (question7 === placesLived)alert(placesLived);
-  if (guesses < maxGuesses);}userPoints++;
+// var guesses = 0;
+// var maxGuesses = 6;
+// var question7 = prompt(user + ' Where have I lived besides Washington? ').toLowerCase;
+// console.log(question7);guesses++;
+// var placesLived = placesLived ['North Carolina' , 'Nebraska' , 'Missouri' ];
+// console.log(placesLived.past);
+// for (question7 === placesLived && guesses <= maxGuesses); {
+//   prompt(user + ' Where have I lived besides Washington? ').toLowerCase;
+//   console.log(question7);guesses++;
+//   if (question7 === placesLived)alert(placesLived);
+//   if (guesses < maxGuesses);}userPoints++;
 
-userPoints++;
+// userPoints++;
+// var cityIlived = ['lynnwood', 'shoreline', 'burien', 'federal way', 'tacoma'];
+// var answer7 = prompt('Can you guess what city I\'ve lived, in Washington State?' + 'Please enter a name of a city within Washington State!').toLowerCase();
+// var tries2 = 0;
+// for (i = 0; i < cityIlived.length; i++){
+//   if(answer7 === cityIlived[i]){
+//     alert ('Yayyyy you got it right');
+//   } else if(answer7 !== cityIlived[i] && tries2 < 5){
+//     alert('You have guessed wrong, Please try again!! ');
+//     var answer7 = prompt('Can you guess what city I\'ve lived, in Washington State?'+ 'Please enter a name of a city within Washington State!').toLowerCase();
+// tries2++;
+// };
+// }
 
 alert(user + ' you have ' + userPoints + ' points');
