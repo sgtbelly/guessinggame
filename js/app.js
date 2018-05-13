@@ -130,8 +130,7 @@ function quest7(){
     if(!correctAnswer) {// if user guesses wrong
       alert('sorry try again');
       guesses++;
-    }
-    else if(guesses === maxGuesses) {// if user runs out of guesses
+    } else if(guesses === maxGuesses) {// if user runs out of guesses
       alert('You have ran out of guesses; GAME OVER' + countriesBeen[i] );
       break;
     }
@@ -145,3 +144,4 @@ function quest7(){
 quest7();
 //end of editing question 7
 alert ('Gongratulations ' + user + ' you have ' + userPoints + ' out of 7');// total points user has
+console.log(user + 'your points are ' + userPoints + 'out of 7');
