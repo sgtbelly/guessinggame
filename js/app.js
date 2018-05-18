@@ -124,7 +124,7 @@ function quest6() {
     if (question6 > favNumber) alert('Too High');
     if (tries < maxTries);
   }
-  userPoints++;
+  if (question6 === '3') userPoints++;
   alert(user + ' you have ' + userPoints + ' points');
 }
 quest6();
@@ -148,7 +148,7 @@ function quest7() { // Question 7
     if (!correctAnswer) { // if user guesses wrong
       alert('try again ');
       guesses++;
-    } else if (correctAnswer === true){ // if user gets answer corect
+    } else if (correctAnswer === true) { // if user gets answer corect
       alert('You are correct!!!');
       userPoints++;
       guesses += 6;

@@ -7,22 +7,20 @@ h1 {
     color: (0,0,0);
     text-align: center;
 }
-img {
-            width: 450px;
-            float: right;
-            margin-right: 10pt;        
-        };
-
-
 
 h2 {
     margin-left: 40px;
-    text-decoration-line: underline
-
+    text-decoration-line: underline;
 }
+img {
+    width: 450px;
+    float: right;
+    margin-right: 10pt;        
+};
+
 
 ol {
-    margin-left: 40px
+    margin-left: 40px;
 }
 
 section {
