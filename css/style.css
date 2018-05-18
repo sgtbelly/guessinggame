@@ -7,6 +7,11 @@ h1 {
     color: (0,0,0);
     text-align: center;
 }
+img {
+            width: 450px;
+            float: right;
+            margin-right: 10pt;        
+        };
 
 
 
@@ -39,8 +44,12 @@ ol {
 
 ul {
     margin-left: 40px;
-}
+};
 
-img {
-    width: 200
-}
+
+p {
+    float: left;
+};
+
+
+        

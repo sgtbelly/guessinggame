@@ -63,7 +63,7 @@ function quest3() {
   question3 = prompt(user + ' Do I like the Seahawks?', ' type yes or no').toLowerCase();
   console.log(question3);
   if (question3 === 'no' || question3 === 'n') {
-    alert('Although I do like the Mariners!, I am a huge DC Sports fan at heart, I like the Redskins, Capitals, Nats, and Wizards');
+    alert(' Although I do like the Mariners!, I am a huge DC Sports fan at heart, I like the Redskins, Capitals, Nats, and Wizards.');
     userPoints++;
   } else {
     alert('Although the Seahawks are much better than the Redskins, I remain loyal to my childhood team.');
@@ -81,10 +81,10 @@ function quest4() {
   console.log(question4);
   if (question4 === 'yes' || question4 === 'y') {
     alert('CORRECTAMUNDO!!!! My wife is Korean and we saw how everyone here is so welcoming, accepting, and they are vast that we fell in love with this place.');
+    userPoints++;
   } else {
     alert(' How can you not love the culture out here.');
   }
-  userPoints++;
   alert(user + ' you have ' + userPoints + ' points');
 }
 quest4();
@@ -133,11 +133,12 @@ quest6();
 //question 7
 var countriesBeen = ['south korea', 'iraq', 'louisanna', 'afghanistan', 'japan'];
 var guesses = 0;
+var maxGuesses = 6;
 var question7;
 var correctAnswer;
 
 function quest7() { // Question 7
-  while ((guesses < 7)) {
+  while (question7 !== countriesBeen && guesses <= maxGuesses) {
     question7 = prompt('Can you guess what countries I have been to?').toLowerCase();
     for (var i = 0; i < countriesBeen.length; i++) {
       if (question7 === countriesBeen[i]) { // just check if the answer is one of the answer in the array
@@ -145,18 +146,18 @@ function quest7() { // Question 7
       }
     }
     if (!correctAnswer) { // if user guesses wrong
-      alert('try again class.');
+      alert('try again ');
       guesses++;
-      guesses += 6;
-    } else { // if user gets answer corect
+    } else if (correctAnswer === true){ // if user gets answer corect
       alert('You are correct!!!');
       userPoints++;
       guesses += 6;
-
+    }
+    if (guesses === 6) { // if user runs out of guesses
+      alert('You have ran out of guesses; GAME OVER. I have been to the following countries: South Korea, Iraq, Lousianna (yes I know Lousianna is a state but it is waay different. Have you ever been?), Afghanistan, and Japan.');
+      guesses += 6;
     }
   }
-  if (guesses <= 7) { // if user runs out of guesses
-    alert('You have ran out of guesses; GAME OVER. I have been to the following countries: South Korea, Iraq, Lousianna (yes I know Lousianna is a state but it is waay different. Have you ever been?), Afghanistan, and Japan.');}
 }
 quest7();
 //end of editing question 7
