@@ -66,7 +66,7 @@ function quest3() {
     alert(' Although I do like the Mariners!, I am a huge DC Sports fan at heart, I like the Redskins, Capitals, Nats, and Wizards.');
     userPoints++;
   } else {
-    alert('Although the Seahawks are much better than the Redskins, I remain loyal to my childhood team.');
+    alert('Although the Seahawks have been winning as of late. I will always remain loyal to my childhood team, The Washington Redskins, I am not a fair weather or bandwagon fan!!!!!!!!');
   }
   alert(user + ' you have ' + userPoints + ' points');
 }
