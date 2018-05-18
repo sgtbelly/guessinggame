@@ -131,7 +131,7 @@ quest6();
 // //end editing question 6
 
 //question 7
-var countriesBeen = ['south korea', 'iraq', 'louisanna', 'afghanistan', 'japan'];
+var countriesBeen = ['south korea', 'iraq', 'louisiana', 'afghanistan', 'japan'];
 var guesses = 0;
 var maxGuesses = 6;
 var question7;
@@ -154,7 +154,7 @@ function quest7() { // Question 7
       guesses += 6;
     }
     if (guesses === 6) { // if user runs out of guesses
-      alert('You have ran out of guesses; GAME OVER. I have been to the following countries: South Korea, Iraq, Lousianna (yes I know Lousianna is a state but it is waay different. Have you ever been?), Afghanistan, and Japan.');
+      alert('You have ran out of guesses; GAME OVER. I have been to the following countries: South Korea, Iraq, Louisiana (I know its a state; but its an experience you will never forget!!), Afghanistan, and Japan.');
       guesses += 6;
     }
   }
