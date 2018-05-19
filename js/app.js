@@ -11,7 +11,7 @@
 //what is your name
 var userPoints = 0;
 console.log('helllooooo');
-alert(' You want to play a guessing game don\'t you?  yes you do.');
+alert(' Hello my name is James, Do you want to play a guessing game about me?  I know you do.');
 //name
 var user;
 
